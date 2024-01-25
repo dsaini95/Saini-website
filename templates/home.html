@@ -2,42 +2,40 @@
 <html>
    <head>
      <title> Saini Careers</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
      <style>
-       h1 {
-         font: size; 40px;
-         font-family: Roboto;
-         font-weight: normal;
-         color: rgb(100, 100, 100)
-         text-aligncenter;
-       }
        #banner {
-         width: 100%;
          height: 360px;
+         width: 100%;
+         object-fit
          
        }
-
-       .bodytext {
-         font-family: Roboto;
-         color: rgb(80, 80, 80)
-       }
-       #container {
-         max-width: 720px;
-         margin: 0 auto 0 auto;
-       }
      </style>
+     </head>
+     <body>
+       <div class="container">
    </head>
    <body>
      <div id="container">
-     <h1>Hello There, you'll learn about the job opening at Saini Careers</h1>
-     <img id="banner"src="https://be20eef7-acf1-4f77-a32f-97a1c7c16fba-00-21wf8jad1qpcs.pike.replit.dev/static/banner.jpeg.jpg"
+     <h1 class="text-center mt-2 mb-4">We are The Change</h1>
+     <img class ="img-fluid" id="bannernew"src="https://be20eef7-acf1-4f77-a32f-97a1c7c16fba-00-21wf8jad1qpcs.pike.replit.dev/static/banner.jpeg.jpg"
        height="320">
-     <h2>About Saini</h2>
-       <p class="bodytext">
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida cum sociis. Luctus venenatis lectus magna fringilla. Bibendum neque egestas congue quisque egestas diam. Pharetra et ultrices neque ornare aenean euismod. Quam nulla porttitor massa id neque. Purus non enim praesent elementum facilisis leo vel fringilla est. Purus sit amet volutpat consequat mauris. Cras adipiscing enim eu turpis egestas. Volutpat commodo sed egestas egestas fringilla phasellus faucibus.</p>
-     <h2>Open Positions</h2>
-     <p>TODO - Show the jobs here</p>
-     <div style="text -align:center;"> 
-       <button>Contact Us</button>
+     <h2 class="text-center mt-2 mb-4">About Saini</h2>
+       
+     <p class="lead">Embark on a journey where passion meets purpose, and careers transform into catalysts for meaningful impact. At "We Are the Change," we believe in the power of individuals to make a difference, and we invite you to be a part of a community that thrives on innovation, collaboration, and positive change.</p>
+     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+       <div>
+         {% for job in jobs %}
+
+         {% include 'jobitem.html' %}
+       {% endfor %}
+       </div>
+     <p class="text-center">TODO - Show the jobs here</p>
+       <div class="text-center">
+     
+       <button class "mt-4"="btn btn-primary btn-lg">Contact Us</button>
        <p>Copyright 2024 Saini Corp</p>
      </div>
    </body>
