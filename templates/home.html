@@ -15,6 +15,7 @@
      </style>
      </head>
      <body>
+       {% include 'nav.html' %}
        <div class="container">
    </head>
    <body>
@@ -23,8 +24,13 @@
      <img class ="img-fluid" id="bannernew"src="https://be20eef7-acf1-4f77-a32f-97a1c7c16fba-00-21wf8jad1qpcs.pike.replit.dev/static/banner.jpeg.jpg"
        height="320">
      <h2 class="text-center mt-2 mb-4">About Saini</h2>
-       
+      <div class="row" style="margin-bottom:16px">
+        <div class="col-6">
      <p class="lead">Embark on a journey where passion meets purpose, and careers transform into catalysts for meaningful impact. At "We Are the Change," we believe in the power of individuals to make a difference, and we invite you to be a part of a community that thrives on innovation, collaboration, and positive change.</p>
+        </div>
+          <div class="col-6">
+     <img src="/static/Dream.jpg" style="height:320px;border-radius:4px">
+      </div>
      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
        <div>
          {% for job in jobs %}
@@ -35,8 +41,9 @@
      <p class="text-center">TODO - Show the jobs here</p>
        <div class="text-center">
      
-       <button class "mt-4"="btn btn-primary btn-lg">Contact Us</button>
+       <a  class "mt-4"="btn btn-primary btn-lg"href google.com>Contact Us</a>
        <p>Copyright 2024 Saini Corp</p>
      </div>
+       {% include 'footer.html' %}
    </body>
 </html>
